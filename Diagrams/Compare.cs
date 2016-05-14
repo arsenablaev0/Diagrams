@@ -42,78 +42,7 @@ namespace Diagrams
             var lineCountInTest = _testList.Count(x => x is LineFigure);
 
 
-            //if (_standartList[_taskNumber] != null)
-            //{
-            //    for (int i = 0; i < _standartList[_taskNumber].Count; i++)
-            //    {
-            //        switch (_standartList[_taskNumber][i])
-            //        {
-            //            case "Diagrams.RectFigure":
-            //                //rectCountInStandart++;
-            //                break;
-            //            case "Diagrams.RhombFigure":
-            //                rhombCountInStandart++;
-            //                break;
-            //            case "Diagrams.ParalelogrammFigure":
-            //                paralelogrammCountInStandart++;
-            //                break;
-            //            case "Diagrams.EllipseFigure":
-            //                ellipseCountInStandart++;
-            //                break;
-            //            case "Diagrams.CycleStartFigure":
-            //                cycleStartCountInStandart++;
-            //                break;
-            //            case "Diagrams.CycleEndFigure":
-            //                cycleEndCountInStandart++;
-            //                break;
-            //            case "Diagrams.LedgeLineFigure":
-            //                lineCountInStandart++;
-            //                break;
-            //        }
-            //    }
-            //}
-            //if (_testList == null) return;
-            //foreach (var t in _testList)
-            //{
-            //    if (t is RectFigure)
-            //    {
-            //        //rectCountInTest++;
-            //    }
-            //    if (t is RhombFigure)
-            //    {
-            //        rhombCountInTest++;
-            //    }
-            //    if (t is ParalelogrammFigure)
-            //    {
-            //        paralelogrammCountInTest++;
-            //    }
-            //    if (t is EllipseFigure)
-            //    {
-            //        ellipseCountInTest++;
-            //    }
-            //    if (t is CycleStartFigure)
-            //    {
-            //        cycleStartInTest++;
-            //    }
-            //    if (t is CycleEndFigure)
-            //    {
-            //        cycleEndInTest++;
-            //    }
-            //    if (t is LineFigure)
-            //    {
-            //        lineCountInTest++;
-            //    }
-            //}
-     
-            
-            //MessageBox.Show(
-            //     string.Format(
-            //         "Не хватает блоков: \n {0} 'Начало и конец' \n {1} 'Ветвлений' \n {2} 'Ввод и вывод данных' \n {3} 'Выполнение операции' \n {4} 'Начало цикла' \n {5} 'Конец цикла' \n {6} 'Связей'",
-            //         rectCountInStandart - rectCountInTest, rhombCountInStandart - rhombCountInTest, paralelogrammCountInStandart - paralelogrammCountInTest,
-            //         ellipseCountInStandart - ellipseCountInTest, cycleStartCountInStandart - cycleStartInTest, cycleEndCountInStandart - cycleEndInTest, lineCountInStandart - lineCountInTest));
-            
            
-
         }
 
 
