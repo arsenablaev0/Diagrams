@@ -40,7 +40,7 @@ namespace Diagrams
             var cycleStartInTest = _testList.Count(x => x is CycleStartFigure);
             var cycleEndInTest = _testList.Count(x => x is CycleEndFigure);
             var lineCountInTest = _testList.Count(x => x is LineFigure);
-
+            //asasd
 
            
         }
