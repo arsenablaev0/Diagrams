@@ -1,0 +1,20 @@
+C:\Projects_CSharp\Diagrams\VectorGraphics\bin\Debug\VectorGraphics.exe
+C:\Projects_CSharp\Diagrams\VectorGraphics\bin\Debug\VectorGraphics.pdb
+C:\Projects_CSharp\Diagrams\VectorGraphics\bin\Debug\Diagrams.dll
+C:\Projects_CSharp\Diagrams\VectorGraphics\bin\Debug\Diagrams.pdb
+C:\Projects_CSharp\Diagrams\VectorGraphics\obj\x86\Debug\DiagramsTest.csprojResolveAssemblyReference.cache
+C:\Projects_CSharp\Diagrams\VectorGraphics\obj\x86\Debug\Diagrams.Form1.resources
+C:\Projects_CSharp\Diagrams\VectorGraphics\obj\x86\Debug\Diagrams.Properties.Resources.resources
+C:\Projects_CSharp\Diagrams\VectorGraphics\obj\x86\Debug\DiagramsTest.csproj.GenerateResource.Cache
+C:\Projects_CSharp\Diagrams\VectorGraphics\obj\x86\Debug\VectorGraphics.exe
+C:\Projects_CSharp\Diagrams\VectorGraphics\obj\x86\Debug\VectorGraphics.pdb
+D:\Visual Studio 2013\Project\Diagrams\VectorGraphics\bin\Debug\VectorGraphics.exe
+D:\Visual Studio 2013\Project\Diagrams\VectorGraphics\bin\Debug\VectorGraphics.pdb
+D:\Visual Studio 2013\Project\Diagrams\VectorGraphics\bin\Debug\Diagrams.dll
+D:\Visual Studio 2013\Project\Diagrams\VectorGraphics\bin\Debug\Diagrams.pdb
+D:\Visual Studio 2013\Project\Diagrams\VectorGraphics\obj\x86\Debug\DiagramsTest.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Project\Diagrams\VectorGraphics\obj\x86\Debug\Diagrams.Form1.resources
+D:\Visual Studio 2013\Project\Diagrams\VectorGraphics\obj\x86\Debug\Diagrams.Properties.Resources.resources
+D:\Visual Studio 2013\Project\Diagrams\VectorGraphics\obj\x86\Debug\DiagramsTest.csproj.GenerateResource.Cache
+D:\Visual Studio 2013\Project\Diagrams\VectorGraphics\obj\x86\Debug\VectorGraphics.exe
+D:\Visual Studio 2013\Project\Diagrams\VectorGraphics\obj\x86\Debug\VectorGraphics.pdb

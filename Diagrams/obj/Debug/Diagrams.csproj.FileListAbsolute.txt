@@ -1,0 +1,16 @@
+C:\Projects_CSharp\Diagrams\Diagrams\bin\Debug\Diagrams.dll
+C:\Projects_CSharp\Diagrams\Diagrams\bin\Debug\Diagrams.pdb
+C:\Projects_CSharp\Diagrams\Diagrams\obj\Debug\Diagrams.csprojResolveAssemblyReference.cache
+C:\Projects_CSharp\Diagrams\Diagrams\obj\Debug\Diagrams.DiagramBox.resources
+C:\Projects_CSharp\Diagrams\Diagrams\obj\Debug\Diagrams.csproj.GenerateResource.Cache
+C:\Projects_CSharp\Diagrams\Diagrams\obj\Debug\Diagrams.dll
+C:\Projects_CSharp\Diagrams\Diagrams\obj\Debug\Diagrams.pdb
+D:\Visual Studio 2013\Project\Diagrams\Diagrams\obj\Debug\Diagrams.DiagramBox.resources
+D:\Visual Studio 2013\Project\Diagrams\Diagrams\obj\Debug\Diagrams.csproj.GenerateResource.Cache
+D:\Visual Studio 2013\Project\Diagrams\Diagrams\obj\Debug\Diagrams.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Project\Diagrams\Diagrams\bin\Debug\Diagrams.dll
+D:\Visual Studio 2013\Project\Diagrams\Diagrams\bin\Debug\Diagrams.pdb
+D:\Visual Studio 2013\Project\Diagrams\Diagrams\obj\Debug\Diagrams.dll
+D:\Visual Studio 2013\Project\Diagrams\Diagrams\obj\Debug\Diagrams.pdb
+D:\Visual Studio 2013\Project\Diagrams\Diagrams\obj\Debug\Diagrams.Properties.Resources.resources
+D:\Visual Studio 2013\Project\Diagrams\Diagrams\obj\Debug\Diagrams.TaskForm.resources
