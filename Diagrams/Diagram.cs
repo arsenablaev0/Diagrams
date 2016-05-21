@@ -75,6 +75,8 @@ namespace Diagrams
 
         Color _penColor = Color.CornflowerBlue;
         public float _penWidth = 1;
+
+        public string Name;
         [NonSerialized]
         protected Pen _pen;
 
@@ -277,11 +279,26 @@ namespace Diagrams
     [Serializable]
     public class RectFigure : SolidFigure
     {
+        public string Name = "Выполнение операции";
+
         public RectFigure()
         {
+            base.Name = Name;
+
             Path.AddRectangle(new RectangleF(-defaultSize, -defaultSize / 2, 2 * defaultSize, defaultSize));
             textRect = new RectangleF(-defaultSize + 3, -defaultSize / 2 + 2, 2 * defaultSize - 6, defaultSize - 4);
 
+        }
+
+        public override int GetHashCode()
+        {
+            return 0;
+
+        }
+        public override bool Equals(object obj)
+        {
+            var other = obj as RectFigure;
+            return other != null;
         }
     }
 
@@ -290,8 +307,10 @@ namespace Diagrams
     [Serializable]
     public class RhombFigure : SolidFigure
     {
+        public string Name = "Ветвлений";
         public RhombFigure()
         {
+            base.Name = Name;
             Path.AddPolygon(new PointF[]{
                 new PointF(-defaultSize, 0),
                 new PointF(0, -defaultSize/2),
@@ -300,14 +319,26 @@ namespace Diagrams
             });
             textRect = new RectangleF(-defaultSize / 2, -defaultSize / 4, defaultSize, defaultSize / 2);
         }
+        public override int GetHashCode()
+        {
+            return 1;
+
+        }
+        public override bool Equals(object obj)
+        {
+            var other = obj as RhombFigure;
+            return other != null;
+        }
     }
 
     //паралелограмм
     [Serializable]
     public class ParalelogrammFigure : SolidFigure
     {
+        public string Name = "Ввод и вывод данных";
         public ParalelogrammFigure()
         {
+            base.Name = Name;
             float shift = 8f;
             Path.AddPolygon(new PointF[]{
                 new PointF(-defaultSize + shift/2, -defaultSize/2),
@@ -317,14 +348,26 @@ namespace Diagrams
             });
             textRect = new RectangleF(-defaultSize + shift / 2, -defaultSize / 2 + 2, 2 * defaultSize - shift, defaultSize - 4);
         }
+        public override int GetHashCode()
+        {
+            return 2;
+
+        }
+        public override bool Equals(object obj)
+        {
+            var other = obj as ParalelogrammFigure;
+            return other != null;
+        }
     }
 
     //эллипс
     [Serializable]
     public class EllipseFigure : SolidFigure
     {
+        public string Name = "Начало и конец";
         public EllipseFigure()
         {
+            base.Name = Name;
             // Path.AddEllipse(new RectangleF(-defaultSize, -defaultSize / 2, defaultSize * 2, defaultSize));
             textRect = new RectangleF(-defaultSize / 1.4f, -defaultSize / 2 / 1.4f, 2 * defaultSize / 1.4f, defaultSize / 1.4f);
 
@@ -334,6 +377,16 @@ namespace Diagrams
 
             Path.AddArc(-defaultSize + 60, -defaultSize / 4, defaultSize / 2, defaultSize / 1.7F, 90, -180);
         }
+        public override int GetHashCode()
+        {
+            return 3;
+
+        }
+        public override bool Equals(object obj)
+        {
+            var other = obj as EllipseFigure;
+            return other != null;
+        }
     }
 
     //стопка прямоугольников
@@ -342,6 +395,7 @@ namespace Diagrams
     {
         public StackFigure()
         {
+
             float shift = 4f;
             Path.AddRectangle(new RectangleF(-defaultSize, -defaultSize / 2, defaultSize * 2, defaultSize));
             Path.AddLines(new PointF[]{
@@ -354,6 +408,16 @@ namespace Diagrams
             });
 
             textRect = new RectangleF(-defaultSize + 3, -defaultSize / 2 + 2, 2 * defaultSize - 6, defaultSize - 4);
+        }
+        public override int GetHashCode()
+        {
+            return 4;
+
+        }
+        public override bool Equals(object obj)
+        {
+            var other = obj as StackFigure;
+            return other != null;
         }
     }
 
@@ -393,6 +457,16 @@ namespace Diagrams
             if (!string.IsNullOrEmpty(text))
                 gr.DrawString(text, SystemFonts.DefaultFont, Brushes.Black, textRect, StringFormat.GenericDefault);
             gr.Restore(transState);
+        }
+        public override int GetHashCode()
+        {
+            return 5;
+
+        }
+        public override bool Equals(object obj)
+        {
+            var other = obj as FrameFigure;
+            return other != null;
         }
     }
 
@@ -436,12 +510,24 @@ namespace Diagrams
         {
             location = location.Offset(dx, dy);
         }
+        public override int GetHashCode()
+        {
+            return 6;
+
+        }
+        public override bool Equals(object obj)
+        {
+            var other = obj as PictureFigure;
+            return other != null;
+        }
     }
 
     public class CycleStartFigure : SolidFigure
     {
+        public string Name = "Начало цикла";
         public CycleStartFigure()
         {
+            base.Name = Name;
             float shift = 8f;
             Path.AddPolygon(new PointF[]{
                
@@ -457,13 +543,26 @@ namespace Diagrams
 
             textRect = new RectangleF(-defaultSize + shift / 2, -defaultSize / 2 + 2, 2 * defaultSize - shift, defaultSize - 4);
         }
+        public override int GetHashCode()
+        {
+            return 7;
+
+        }
+        public override bool Equals(object obj)
+        {
+            var other = obj as CycleStartFigure;
+            return other != null;
+        }
 
     }
 
     public class CycleEndFigure : SolidFigure
     {
+        public string Name = "Конец цикла";
+
         public CycleEndFigure()
         {
+            base.Name = Name;
             float shift = 8f;
             Path.AddPolygon(new PointF[]
             {
@@ -477,6 +576,16 @@ namespace Diagrams
                 new PointF(-defaultSize, defaultSize/6)
             });
             textRect = new RectangleF(-defaultSize + shift / 2, -defaultSize / 2 + 2, 2 * defaultSize - shift, defaultSize - 4);
+        }
+        public override int GetHashCode()
+        {
+            return 8;
+
+        }
+        public override bool Equals(object obj)
+        {
+            var other = obj as CycleEndFigure;
+            return other != null;
         }
     }
     //соединительная линия
@@ -533,16 +642,32 @@ namespace Diagrams
             m2.targetFigure = this;
             yield return m2;
         }
+
+        public override int GetHashCode()
+        {
+            return 9;
+
+        }
+        public override bool Equals(object obj)
+        {
+            var other = obj as LineFigure;
+            return other != null;
+        }
     }
 
     //линия с "переломом"
     [Serializable]
     public class LedgeLineFigure : LineFigure
     {
+        public string Name = "Связей";
         Diagram diagran = new Diagram();
         //координата X точки "перелома"
         internal float ledgePositionX = -1;
 
+        public LedgeLineFigure()
+        {
+            base.Name = Name;
+        }
         protected override void RecalcPath()
         {
             PointF[] points = null;
@@ -582,6 +707,17 @@ namespace Diagrams
             m3.targetFigure = this;
             m3.UpdateLocation();
             yield return m3;
+        }
+
+        public override int GetHashCode()
+        {
+            return 10;
+
+        }
+        public override bool Equals(object obj)
+        {
+            var other = obj as LedgeLineFigure;
+            return other != null;
         }
     }
 
