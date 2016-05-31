@@ -221,7 +221,7 @@ namespace Diagrams
 
             else
             {
-                var ask = MessageBox.Show("Очистить поле", "Вы уверены, что хотите очистить поле?",
+                var ask = MessageBox.Show("Вы уверены, что хотите очистить поле?","Очистить поле",
                     MessageBoxButtons.YesNo);
                 if (ask == DialogResult.Yes)
                 {
